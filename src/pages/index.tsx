@@ -1,25 +1,31 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from 'styled-components'
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import Social from '../components/Social'
+import Sections from '../components/Sections'
 
-const RedText = styled.span`
-  color: red;
+const Title = styled.div`
+  color: gray;
+`
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 `
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1><RedText>Hi people</RedText></h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Social />
+    <Sections />
+    <Container>
+      <h1>Hey, I'm Matt</h1>
+      <h2>check out the links on the right -></h2>
+    </Container>
   </Layout>
 )
 
