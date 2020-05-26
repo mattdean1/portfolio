@@ -8,6 +8,7 @@ import Sections from '../components/Sections'
 import SectionTeaser from '../components/SectionTeaser'
 import Title from '../components/Title'
 import About from '../components/About'
+import { config } from '../config'
 
 const Container = styled.div`
   display: flex;
@@ -15,6 +16,12 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: calc(100vh - 80px);
+
+  @media only screen 
+  and (max-width: ${config.bigBreakpoint}px) 
+  and (orientation: landscape) {
+    height: 400px
+  }
 `
 
 const IndexPage = () => (

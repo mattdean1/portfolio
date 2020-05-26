@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import github from '../images/social/github.png'
 import linkedin from '../images/social/linkedin.png'
 import twitter from '../images/social/twitter.png'
+import { config } from '../config'
 
 const Circle = styled.div`
   border-radius: 50%;
@@ -20,11 +21,19 @@ const Container = styled.div`
   right: 0;
   padding: 20px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+
   & > ${Circle} {
-    margin-right: 20px;
-    &:last-child {
-      margin-right: 0px;
+    margin-bottom: 15px;
+  }
+
+@media only screen and (min-width: ${config.breakpoint}px) {
+    flex-direction: row;
+    & > ${Circle} {
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0px;
+      }
     }
   }
 `

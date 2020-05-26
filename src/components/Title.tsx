@@ -9,6 +9,10 @@ const Img = styled.img`
 `
 
 const MainTitle = styled.h1`
+  margin-left: 20px;
+  @media only screen and (min-width: 500px) {
+    margin-left: 0;
+  }
 `
 const Subtitle = styled.h2`
   margin-bottom: 5px;

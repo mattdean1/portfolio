@@ -2,19 +2,30 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Image from './image'
+import { config } from '../config'
 
 const Container = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+@media only screen and (min-width: ${config.breakpoint}px) {
+    flex-direction: row;  
+  }
 `
 
 const ImageContainer = styled.div`
-  height: 300px;
-  width: 300px;
   border-radius: 50%;
   overflow: hidden;
+  height: 150px;
+  width: 150px;
+  margin-bottom: 30px;
+
+@media only screen and (min-width: ${config.bigBreakpoint}px) {
+    height: 300px;
+    width: 300px;
+  }
 `
 
 const TextContainer = styled.div`
@@ -22,7 +33,10 @@ const TextContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 50px;
+  padding: 0 20px;
+  @media only screen and (min-width: ${config.bigBreakpoint}px) {
+    padding: 50px
+  }
 `
 
 const Link = styled.div`
