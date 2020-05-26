@@ -48,8 +48,8 @@ const About = () => (
         <li>Frontend: React, React Native, Vue</li>
       </ul>
       <div style={{display: 'flex', flexDirection: 'row'}}>
-        <a href="https://drive.google.com/open?id=1U_nlTPKHsG2wevHrVH59kGU1EtRC9t4D"><Link>CV</Link></a>
-        <a href="https://github.com/mattdean1"><Link>GitHub</Link></a>
+        <a href="https://drive.google.com/open?id=1U_nlTPKHsG2wevHrVH59kGU1EtRC9t4D" target="blank"><Link>CV</Link></a>
+        <a href="https://github.com/mattdean1" target="blank"><Link>GitHub</Link></a>
       </div>
     </TextContainer>
   </Container>
