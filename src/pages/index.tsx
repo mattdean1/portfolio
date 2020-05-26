@@ -7,19 +7,15 @@ import Social from '../components/Social'
 import Sections from '../components/Sections'
 import SectionTeaser from '../components/SectionTeaser'
 import Title from '../components/Title'
-
-
+import About from '../components/About'
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 80px);
 `
-
-
-
 
 const IndexPage = () => (
   <Layout>
@@ -28,11 +24,11 @@ const IndexPage = () => (
     {/* <Sections /> */}
     <Container>
       <Title />
-      
-      
     </Container>
     <SectionTeaser />
-    <Container style={{backgroundColor: '#f2f2f2'}}></Container>
+    <Container style={{backgroundColor: '#f2f2f2'}}>
+      <About/>
+    </Container>
   </Layout>
 )
 

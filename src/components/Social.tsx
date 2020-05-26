@@ -15,7 +15,7 @@ const Circle = styled.div`
 `
 
 const Container = styled.div`
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   padding: 20px;

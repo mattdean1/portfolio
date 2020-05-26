@@ -20,13 +20,12 @@ const SubtitleContainer = styled.div`
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 70px;
+  bottom: 80px;
 `
 
 const Title = () => (
   <>
     <MainTitle>hi, i'm matt</MainTitle>
-
     <SubtitleContainer>
       <Subtitle>scroll down</Subtitle>
       <Img src={downArrow} />
