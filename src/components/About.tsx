@@ -54,7 +54,6 @@ const About = () => (
     <TextContainer>
       <h2 style={{marginBottom: '20px'}}>Full-stack software engineer</h2>
       <h2 style={{marginBottom: '20px'}}>3+ years experience</h2>
-      <h2 style={{marginBottom: '30px'}}>Currently looking for a backend or data focused role </h2>
       <h3>Key skills:</h3>
       <ul style={{marginBottom: '30px'}}>
         <li>Infrastructure: Serverless, Kubernetes, AWS</li>
